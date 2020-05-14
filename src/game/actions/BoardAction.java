@@ -11,25 +11,28 @@ public abstract class BoardAction implements Action {
 
     /**
      * Board actions always interact with 1 land and 1 legion
-     * either to move interact_legion to interact_land
-     * or bolster interact_legion to interact_land
+     * either to move legion
+     * to land
+     * or bolster legion
+     * to land
      */
-    protected Land interact_land;
-    protected Legion interact_legion;
+    protected Land land;
+    protected Legion legion;
 
     /**
      * get land
-     * @return interact_land
+     * @return land
      */
-    public Land getInteract_land()
-    {return interact_land;}
+    public Land getLand()
+    {return land;}
 
     /**
      * get legion
-     * @return interact_legion
+     * @return legion
+     *
      */
-    public Legion getInteract_legion()
-    {return interact_legion;}
+    public Legion getLegion()
+    {return legion;}
 
     /**
      * preforms intended action, returns if it was succesfull
