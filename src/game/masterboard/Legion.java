@@ -44,9 +44,10 @@ public class Legion {
 
 		return false;
 	}
-	
+
 	/**
 	 * Checks if the legion contains a specific character object.
+	 * 
 	 * @param character The character to be checked.
 	 * @return If the legion contains the character.
 	 */
@@ -69,6 +70,19 @@ public class Legion {
 			if (character.getName().equals(name))
 				count++;
 		return count;
+	}
+
+	/**
+	 * Creates an array representation of the legion.
+	 * 
+	 * @return The array representation of the legion.
+	 */
+	public Character[] toArray() {
+		Character[] charactersArray = new Character[this.characters.size()];
+		int i=0;
+		for (Character character : this.characters)
+			charactersArray[i++] = character;
+		return charactersArray;
 	}
 
 }
