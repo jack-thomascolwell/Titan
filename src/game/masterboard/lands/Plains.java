@@ -10,7 +10,6 @@ public class Plains extends Land {
 
 	public Plains(LandName name) {
 		super(name);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
